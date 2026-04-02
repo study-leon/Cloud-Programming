@@ -35,12 +35,8 @@ terraform apply
 terraform destroy
 ```
 
-## Website
-- Manuell: https://d345pmifhyafra.cloudfront.net
-- Terraform: https://d2htfpbf89yo2y.cloudfront.net
-
 ## Kosten
-Vollständig im AWS Free Tier – ca. 0,00 EUR
+Vollständig im AWS Free Tier => Ressourcen wieder freigegeben
 
 ## Secret-Verwaltung
 Credentials werden ausschließlich als Umgebungsvariablen 
