@@ -11,7 +11,8 @@ Moduls Cloud-Programmierung (DLBSEPCP01).
 - **Terraform** – Infrastructure as Code
 
 ## Voraussetzungen
-- AWS Account
+- AWS Account und Secret Keys generieren
+- Windows PowerShell
 - AWS CLI installiert
 - Terraform installiert
 
@@ -31,8 +32,8 @@ terraform plan
 # 4. Infrastruktur erstellen
 terraform apply
 
-# 5. Infrastruktur wieder abbauen
-terraform destroy
+# 5. index-HTML hochladen über AWS CLI oder AWS Console
+aws s3 cp C:\terraform-projekt\index.html s3://study-leon-terraform-demo/
 ```
 
 ## Kosten
