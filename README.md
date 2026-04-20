@@ -10,6 +10,22 @@ Moduls Cloud-Programmierung (DLBSEPCP01).
 - **AWS IAM** – Zugriffsverwaltung (Least-Privilege-Prinzip)
 - **Terraform** – Infrastructure as Code
 
+## Struktur
+terraform-projekt/
+├── main.tf          # Einstiegspunkt, ruft Module auf
+├── variables.tf     # Zentrale Variablen (Region, Bucket-Name)
+├── outputs.tf       # Ausgaben nach Deployment (CloudFront-URL)
+└── modules/
+    ├── s3/
+    │   ├── main.tf      # S3 Bucket, Hosting, Bucket-Policy
+    │   ├── variables.tf
+    │   └── outputs.tf
+    └── cloudfront/
+        ├── main.tf      # CloudFront Distribution
+        ├── variables.tf
+        └── outputs.tf
+
+
 ## Voraussetzungen
 - AWS Account und Secret Keys generieren
 - Windows PowerShell
