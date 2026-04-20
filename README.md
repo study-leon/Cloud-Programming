@@ -11,6 +11,7 @@ Moduls Cloud-Programmierung (DLBSEPCP01).
 - **Terraform** – Infrastructure as Code
 
 ## Struktur
+```
 terraform-projekt/
 ├── main.tf          # Einstiegspunkt, ruft Module auf
 ├── variables.tf     # Zentrale Variablen (Region, Bucket-Name)
@@ -24,6 +25,7 @@ terraform-projekt/
         ├── main.tf      # CloudFront Distribution
         ├── variables.tf
         └── outputs.tf
+```
 
 
 ## Voraussetzungen
